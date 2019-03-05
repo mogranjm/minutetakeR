@@ -1,12 +1,12 @@
 Package: minutR
-Title: What the Package Does (One Line, Title Case)
+Type: Package
+Title: Meeting Minutes in R markdown
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
+    person(given = "James", family = "Morgan", role = c("aut", "cre"), email = "ja.morgan1@outlook.com")
+Description: An R Markdown template for meeting minutes
 License: What license it uses
+Imports: utils, rmarkdown, knitr, yaml
+URL: https://github.com/mogranjm/minutR
+BugReports: https://github.com/mogranjm/minutR/issues
 Encoding: UTF-8
-LazyData: true
