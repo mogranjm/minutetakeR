@@ -4,7 +4,7 @@ Title: Meeting Minutes in R markdown
 Version: 0.0.0.9000
 Authors@R: person(given = "James", family = "Morgan", role = c("aut", "cre"), email = "ja.morgan1@outlook.com")
 Description: An R Markdown template for meeting minutes
-License: What license it uses
+License: GPL
 Imports: utils, rmarkdown, knitr, yaml
 URL: https://github.com/mogranjm/minutR
 BugReports: https://github.com/mogranjm/minutR/issues
