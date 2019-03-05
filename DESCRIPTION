@@ -9,3 +9,4 @@ Imports: utils, rmarkdown, knitr, yaml
 URL: https://github.com/mogranjm/minutR
 BugReports: https://github.com/mogranjm/minutR/issues
 Encoding: UTF-8
+RoxygenNote: 6.1.1
