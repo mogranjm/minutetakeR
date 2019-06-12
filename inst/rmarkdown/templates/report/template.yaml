@@ -1,1 +1,4 @@
-name: Meeting Minutes
+name: Meeting Minutes Template
+description: >
+  A template for meeting minutes
+create_dir: true
