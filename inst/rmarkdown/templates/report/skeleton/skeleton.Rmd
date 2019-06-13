@@ -4,11 +4,11 @@ params:
     meeting_date: '`r format(Sys.Date(), "%d %B %Y")`'
     meeting_time: '`r format(Sys.Time(), "%H:%M%p")`'
     chair: Chair_Name_Here
-	attendees:
-		- Attendee_One
-		- Attendee_Two
-	apologies:
-		- Apology_One
+    attendees:
+        - Attendee_One
+	- Attendee_Two
+    apologies:
+	- Apology_One
 
 title: '`r params$meeting_name` Meeting Minutes'
 # updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
