@@ -1,4 +1,4 @@
 name: Meeting Minutes Template
 description: >
   A template for meeting minutes
-create_dir: true
+create_dir: false
