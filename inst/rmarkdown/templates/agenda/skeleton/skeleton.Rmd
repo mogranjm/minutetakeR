@@ -1,8 +1,8 @@
 ---
 params:
     meeting_name: Meeting_Name_Here
-    meeting_date: `r format(Sys.Date(), "%d %B %Y")`
-    meeting_time: `r format(Sys.Time(), "%H:%M%p")`
+    meeting_date: '`r format(Sys.Date(), "%d %B %Y")`'
+    meeting_time: '`r format(Sys.Time(), "%H:%M%p")`'
 
 title: '`r params$meeting_name` Agenda'
 # updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
