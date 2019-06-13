@@ -1,27 +1,27 @@
 ---
 params:
     meeting_name: Meeting_Name_Here
-    meeting_date: `r format(Sys.Date(), "%d %B %Y")`
-    meeting_time: `r format(Sys.Time(), "%H:%M%p")`
+    meeting_date: '`r Sys.Date()`'
+    meeting_time: '`r Sys.time()`'
     chair: Chair_Name_Here
-	attendees:
-		- Attendee_One
-		- Attendee_Two
-	apologies:
-		- Apology_One
+    attendees:
+    - Attendee_One
+    - Attendee_Two
+    apologies:
+    - Apology_One
 
-title: '`r params$meeting_name` Minutes'
-# updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
+title: '`r params$meeting_name` Meeting Minutes'
+# updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
 subtitle: 'tester'
 
 author: |
-	| Chaired by: `r params$chair`
-	| Attendees: `r params$attendees`
-	| Apologies: `r params$apologies`
+    | Chaired by: '`r params$chair`'
+    | Attendees: '`r params$attendees`'
+    | Apologies: '`r params$apologies`'
 
 date: |
-	| Date: `r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`
-	| Time: `r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`
+    | Date: '`r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`'
+    | Time: '`r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`'
 
 geometry: margin=2.54cm
 output: minutR:::minutes
