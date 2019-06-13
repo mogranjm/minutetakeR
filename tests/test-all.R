@@ -1,3 +1,3 @@
 library(testit)
 
-test_pkg("rticles")
+test_pkg("minutetakeR")

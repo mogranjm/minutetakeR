@@ -2,6 +2,9 @@
 #'
 #' Render Meeting Minutes as a PDF using the custom .tex file
 #' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
+#' @param
+#'   ...,latex_engine,citation_package,highlight,fig_caption,md_extensions
+#'   Args passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
 #' @example
 #' ---
