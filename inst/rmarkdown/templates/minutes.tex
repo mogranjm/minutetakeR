@@ -65,10 +65,6 @@ $endif$
 $if(author-meta)$
             pdfauthor={$author-meta$},
 $endif$
-$if(attendees-meta)$
-			pdfattendees={$attendees-meta$},
-%			pdfattendee={$for(attendees)$attendees$$sep$; $endfor$},
-$endif$
 $if(keywords)$
             pdfkeywords={$for(keywords)$$keywords$$sep$; $endfor$},
 $endif$
@@ -249,12 +245,6 @@ $else$
   $if(compact-title)$
   \preauthor{}\postauthor{}
   $endif$
-$endif$
-$if(attendees)$
-    \attendees{$for(attendees)$$attendees$$sep$ \\ $endfor$}
-$endif$
-$if(apologies)$
-    \apologies{$for(apologies)$$apologies$$sep$ \\ $endfor$}
 $endif$
 $if(date)$
   $if(compact-title)$
