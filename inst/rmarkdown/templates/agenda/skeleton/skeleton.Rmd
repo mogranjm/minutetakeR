@@ -8,8 +8,8 @@ title: '`r params$meeting_name` Agenda'
 # updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
 
 date: |
-	| Date: `r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`
-	| Time: `r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`
+    | Date: `r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`
+    | Time: `r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`
 
 geometry: margin=2.54cm
 output: minutR:::agenda
