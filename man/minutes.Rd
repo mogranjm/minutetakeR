@@ -7,7 +7,7 @@
 minutes(..., keep_tex = TRUE)
 }
 \arguments{
-\item{..., latex_engine, citation_package, highlight, fig_caption, md_extensions}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
+\item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
 
 \item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
 }
