@@ -1,12 +1,12 @@
-Package: minutR
+Package: minutetakeR
 Type: Package
 Title: Meeting Minutes in R markdown
-Version: 0.0.0.9000
+Version: 0.1
 Authors@R: person(given = "James", family = "Morgan", role = c("aut", "cre"), email = "ja.morgan1@outlook.com")
 Description: An R Markdown template for meeting minutes
-License: GPL
+License: GPL(>=2.0)
 Imports: utils, rmarkdown, knitr, yaml
-URL: https://github.com/mogranjm/minutR
-BugReports: https://github.com/mogranjm/minutR/issues
+URL: https://github.com/mogranjm/minutetakeR
+BugReports: https://github.com/mogranjm/minutetakeR/issues
 Encoding: UTF-8
 RoxygenNote: 6.1.1

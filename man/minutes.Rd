@@ -10,5 +10,5 @@ minutes(..., keep_tex = TRUE)
 \item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
 }
 \description{
-Render document as a PDF using the custom .tex file
+Render Meeting Minutes as a PDF using the custom .tex file
 }

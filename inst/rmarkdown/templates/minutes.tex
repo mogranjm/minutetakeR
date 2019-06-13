@@ -202,6 +202,19 @@ $if(compact-title)$
     }
 }
 
+% Create attendees & apologies commands
+\newcommand{\attendees}[1]{
+    \posttitle{
+        \begin{center}\large#1\end{center}
+    }
+}
+
+\newcommand{\apologies}[1]{
+    \posttitle{
+        \begin{center}\large#1\end{center}
+    }
+}
+
 \setlength{\droptitle}{-2em}
 $endif$
 
@@ -232,6 +245,12 @@ $else$
   $if(compact-title)$
   \preauthor{}\postauthor{}
   $endif$
+$endif$
+$if(attendees)$
+    \attendees{$for(attendees)$$attendees$$sep$ \\ $endfor$}
+$endif$
+$if(apologies)$
+    \apologies{$for(apologies)$$apologies$$sep$ \\ $endfor$}
 $endif$
 $if(date)$
   $if(compact-title)$

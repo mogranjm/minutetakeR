@@ -1,7 +1,12 @@
 #' Knit R Markdown to Minutes PDF
 #'
-#' Render document as a PDF using the custom .tex file
+#' Render Meeting Minutes as a PDF using the custom .tex file
 #' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
+#' @export
+#' @example
+#' ---
+#' output: minutr::minutes
+#' ---
 
 minutes <- function(..., keep_tex = TRUE){
 
