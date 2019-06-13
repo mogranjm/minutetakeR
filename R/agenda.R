@@ -8,7 +8,7 @@
 #' @export
 #' @example
 #' ---
-#' output: minutr::agenda
+#' output: minutetakeR::agenda
 #' ---
 
 agenda <- function(..., keep_tex = TRUE){

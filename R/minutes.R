@@ -8,7 +8,7 @@
 #' @export
 #' @example
 #' ---
-#' output: minutr::minutes
+#' output: minutetakeR::minutes
 #' ---
 
 minutes <- function(..., keep_tex = TRUE){

@@ -12,7 +12,7 @@ date: |
     | Time: `r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`
 
 geometry: margin=2.54cm
-output: minutR:::agenda
+output: minutetakeR:::agenda
 ---
 
 Who       | Item
