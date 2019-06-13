@@ -10,8 +10,8 @@ params:
 	apologies:
 		- Apology_One
 
-title: '`r params$meeting_name` Meeting Minutes'
-# updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
+title: '`r params$meeting_name` Minutes'
+# updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
 subtitle: 'tester'
 
 author: |
