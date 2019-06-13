@@ -10,7 +10,7 @@
 
 minutes <- function(..., keep_tex = TRUE){
 
-    template <- find_template("minutes.tex")
+    template <- find_template("minutes")
 
     rmarkdown::pdf_document(
         template = template,

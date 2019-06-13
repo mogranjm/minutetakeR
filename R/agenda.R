@@ -10,7 +10,7 @@
 
 agenda <- function(..., keep_tex = TRUE){
 
-    template <- find_template("agenda.tex")
+    template <- find_template("agenda")
 
     rmarkdown::pdf_document(
         template = template,
