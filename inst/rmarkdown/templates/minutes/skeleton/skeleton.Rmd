@@ -1,8 +1,8 @@
 ---
 params:
     meeting_name: Meeting_Name_Here
-    meeting_date: '`r Sys.Date()`'
-    meeting_time: '`r Sys.time()`'
+    meeting_date: Meeting_date_here
+    meeting_time: Meeting_time_here
     chair: Chair_Name_Here
     attendees:
     - Attendee_One
@@ -19,9 +19,7 @@ author: |
     | Attendees: '`r params$attendees`'
     | Apologies: '`r params$apologies`'
 
-date: |
-    | Date: '`r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`'
-    | Time: '`r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`'
+date: 'Date: `r params$meeting_date`, `r params$meeting_time`'
 
 geometry: margin=2.54cm
 output: minutetakeR:::minutes
