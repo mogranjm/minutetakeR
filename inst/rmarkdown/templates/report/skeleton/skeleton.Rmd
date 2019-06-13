@@ -5,8 +5,8 @@ params:
     meeting_time: '`r format(Sys.Time(), "%H:%M%p")`'
     chair: Chair_Name_Here
     attendees:
-        - Attendee_One
-	- Attendee_Two
+    - Attendee_One
+    - Attendee_Two
     apologies:
 	- Apology_One
 
