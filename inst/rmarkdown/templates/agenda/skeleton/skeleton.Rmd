@@ -3,9 +3,13 @@ params:
     meeting_name: Meeting_Name_Here
     meeting_date: '`r format(Sys.Date(), "%d %B %Y")`'
     meeting_time: '`r format(Sys.time(), "%H:%M%p")`'
+	chair: Chair_name_here
 
 title: '`r params$meeting_name` Agenda'
 # updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
+
+author: |
+    | Chair `r params$chair`
 
 date: |
     | Date: `r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`
