@@ -17,7 +17,7 @@ apologies:
     - Apology_Two
 date: 'Meeting Date: `r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`'
 time: '`r format(lubridate::parse_date_time("13:00", "HM"), "%H:%M%p")`'
-output: minutR::minutes
+output: minutR:::minutes
 ---
 
 ***
