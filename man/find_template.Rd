@@ -4,7 +4,7 @@
 \alias{find_template}
 \title{A Helper function used for locating a LaTeX template file.}
 \usage{
-find_template(template_file)
+find_template(template, file = "template.tex")
 }
 \arguments{
 \item{template_file}{Name of target template file}
