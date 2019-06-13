@@ -5,7 +5,7 @@ Version: 0.4
 Authors@R: person(given = "James", family = "Morgan", role = c("aut", "cre"), email = "ja.morgan1@outlook.com")
 Description: An R Markdown template for meeting minutes
 License: GPL(>=2.0)
-Imports: utils, rmarkdown, knitr, yaml
+Imports: utils, rmarkdown, knitr, yaml, lubridate
 URL: https://github.com/mogranjm/minutetakeR
 BugReports: https://github.com/mogranjm/minutetakeR/issues
 Suggests: testit
