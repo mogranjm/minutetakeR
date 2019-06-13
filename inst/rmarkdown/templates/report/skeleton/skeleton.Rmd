@@ -15,13 +15,13 @@ title: '`r params$meeting_name` Meeting Minutes'
 subtitle: 'tester'
 
 author: |
-	| Chaired by: '`r params$chair`'
-	| Attendees: '`r params$attendees`'
-	| Apologies: '`r params$apologies`'
+    | Chaired by: '`r params$chair`'
+    | Attendees: '`r params$attendees`'
+    | Apologies: '`r params$apologies`'
 
 date: |
-	| Date: '`r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`'
-	| Time: '`r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`'
+    | Date: '`r format(lubridate::dmy(params$meeting_date), "%d %B %Y")`'
+    | Time: '`r format(lubridate::parse_date_time(params$meeting_time, "HM"), "%H:%M%p")`'
 
 geometry: margin=2.54cm
 output: minutR:::minutes
