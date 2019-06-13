@@ -8,7 +8,7 @@ params:
     - Attendee_One
     - Attendee_Two
     apologies:
-	- Apology_One
+    - Apology_One
 
 title: '`r params$meeting_name` Meeting Minutes'
 # updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
