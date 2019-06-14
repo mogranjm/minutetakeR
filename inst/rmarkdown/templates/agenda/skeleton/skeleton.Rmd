@@ -20,41 +20,23 @@ geometry: margin=2.54cm
 output: minutetakeR::agenda
 ---
 
-+-----------+---------------------------------------+
-| Who       | Matters arising from previous minutes |
-+===========+=======================================+
-| Name      | Topic                                 |
-|           | Topic line 2                          |
-+-----------+---------------------------------------+            
-| Name      | Topic 2                               |
-+-----------+---------------------------------------+
+-------------------------------------------------------------------------------------
+ Who         Matter arising from previous minutes
+------------ ------------------------------------------------------------------------
+ Name        **Topic** \
+             Topic line 2 is longer than line 1\
+             Make sure you enter a backslash before the line break when you want a new line
+
+ Name 2      Topic 2
+-------------------------------------------------------------------------------------
 
 ---
 
-----------------------------
+-------------------------------------------------------------------------------------
  Who         Topic
------------- ---------------
- Name        Topic 
-             Topic line 2
-             is longer than
-             line 1
+------------ ------------------------------------------------------------------------
+ Name        **Topic** \
+             Topic line 2 is longer than line 1
 
  Name        Topic 2
-----------------------------
-
----
-
--------------------------------------------------------------
- Centered   Default           Right Left
-  Header    Aligned         Aligned Aligned
------------ ------- --------------- -------------------------
-   First    row                12.0 Example of a row that
-                                    spans multiple lines.
-
-  Second    row                 5.0 Here's another one. Note
-                                    the blank line between
-                                    rows.
--------------------------------------------------------------
-
-Table: Here's the caption. It, too, may span
-multiple lines.
+-------------------------------------------------------------------------------------
