@@ -20,7 +20,16 @@ geometry: margin=2.54cm
 output: minutetakeR::agenda
 ---
 
-Who       | Item
---------- | ---------
-Name      | Arising from previous minutes 
-Name      | Topic
+-----------------------------------------------
+Who       Matters arising from previous minutes
+--------- -------------------------------------
+Name      Topic
+-----------------------------------------------
+
+---
+
+-----------------------------------------------
+Who       Topic
+--------- -------------------------------------
+Name      some_topic
+-----------------------------------------------
