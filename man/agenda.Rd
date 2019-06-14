@@ -11,6 +11,8 @@ agenda(..., keep_tex = TRUE, md_extensions = c("-multiline_tables",
 \item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
 
 \item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
+
+\item{md_extensions}{Extensions to pass to Pandoc}
 }
 \description{
 Render Meeting Agenda as a PDF using the custom .tex file
