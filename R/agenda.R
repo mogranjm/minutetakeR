@@ -9,12 +9,14 @@
 #' output: minutetakeR::agenda
 #' ---
 
-agenda <- function(..., keep_tex = TRUE){
+agenda <- function(..., keep_tex = TRUE,
+                   md_extensions = c("-multiline_tables", "-grid_tables")){
 
     template <- find_template("agenda")
 
     rmarkdown::pdf_document(
         template = template,
-        keep_tex = keep_tex
+        keep_tex = keep_tex,
+        md_extensions = md_extensions
     )
 }
