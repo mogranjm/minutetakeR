@@ -9,7 +9,7 @@ title: '`r params$meeting_name` Agenda'
 # updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
 
 author: |
-    | Chair `r params$chair`
+    | Chair: `r params$chair`
 
 date: 'Date: `r params$meeting_date`, `r params$meeting_time`'
 
