@@ -5,7 +5,7 @@
 \title{Knit R Markdown to Agenda PDF}
 \usage{
 agenda(..., keep_tex = TRUE, md_extensions = c("+multiline_tables",
-  "+grid_tables"))
+  "+escaped_line_breaks"))
 }
 \arguments{
 \item{...}{Arguments passed to \code{rmarkdown::\link{pdf_document}()}.}
@@ -16,4 +16,10 @@ agenda(..., keep_tex = TRUE, md_extensions = c("+multiline_tables",
 }
 \description{
 Render Meeting Agenda as a PDF using the custom .tex file
+}
+\examples{
+---
+# In a YAML Block
+output: minutetakeR::agenda
+---
 }

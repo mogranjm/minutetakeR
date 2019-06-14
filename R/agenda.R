@@ -5,13 +5,14 @@
 #' @param md_extensions Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
-#' @example
+#' @examples
 #' ---
+#' # In a YAML Block
 #' output: minutetakeR::agenda
 #' ---
 
 agenda <- function(..., keep_tex = TRUE,
-                   md_extensions = c("+multiline_tables", "+grid_tables")){
+                   md_extensions = c("+multiline_tables", "+escaped_line_breaks")){
 
     template <- find_template("agenda")
 
