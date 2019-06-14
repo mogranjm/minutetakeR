@@ -5,7 +5,7 @@
 #' @param md_extensions Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
-#' @examples
+#' @example
 #' ---
 #' # In a YAML Block
 #' output: minutetakeR::agenda

@@ -17,9 +17,3 @@ agenda(..., keep_tex = TRUE, md_extensions = c("+multiline_tables",
 \description{
 Render Meeting Agenda as a PDF using the custom .tex file
 }
-\examples{
----
-# In a YAML Block
-output: minutetakeR::agenda
----
-}
