@@ -14,9 +14,3 @@ minutes(..., keep_tex = TRUE)
 \description{
 Render Meeting Minutes as a PDF using the custom .tex file
 }
-\examples{
----
-# In YAML header
-output: minutetakeR::minutes
----
-}

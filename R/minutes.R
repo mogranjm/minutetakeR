@@ -4,7 +4,7 @@
 #' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
 #' @param ... Args passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
-#' @examples
+#' @example
 #' ---
 #' # In YAML header
 #' output: minutetakeR::minutes
