@@ -34,7 +34,7 @@ output: minutetakeR::agenda
 ----------------------------
  Who         Topic
 ------------ ---------------
- Name        Topic
+ Name        Topic 
              Topic line 2
              is longer than
              line 1

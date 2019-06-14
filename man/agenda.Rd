@@ -4,7 +4,8 @@
 \alias{agenda}
 \title{Knit R Markdown to Agenda PDF}
 \usage{
-agenda(..., keep_tex = TRUE)
+agenda(..., keep_tex = TRUE, md_extensions = c("-multiline_tables",
+  "-grid_tables"))
 }
 \arguments{
 \item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
