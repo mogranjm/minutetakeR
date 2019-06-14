@@ -2,7 +2,7 @@
 #'
 #' Render Meeting Agenda as a PDF using the custom .tex file
 #' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
-#' @param md_extensions Markdown extensions passed to Pandoc
+#' @param md_extensions Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
 #' @example
@@ -11,7 +11,7 @@
 #' ---
 
 agenda <- function(..., keep_tex = TRUE,
-                   md_extensions = c("-multiline_tables", "-grid_tables")){
+                   md_extensions = c("+multiline_tables", "+grid_tables")){
 
     template <- find_template("agenda")
 

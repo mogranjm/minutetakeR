@@ -4,15 +4,15 @@
 \alias{agenda}
 \title{Knit R Markdown to Agenda PDF}
 \usage{
-agenda(..., keep_tex = TRUE, md_extensions = c("-multiline_tables",
-  "-grid_tables"))
+agenda(..., keep_tex = TRUE, md_extensions = c("+multiline_tables",
+  "+grid_tables"))
 }
 \arguments{
-\item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
+\item{...}{Arguments passed to \code{rmarkdown::\link{pdf_document}()}.}
 
 \item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
 
-\item{md_extensions}{Extensions to pass to Pandoc}
+\item{md_extensions}{Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)}
 }
 \description{
 Render Meeting Agenda as a PDF using the custom .tex file

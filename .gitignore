@@ -1,2 +1,4 @@
 .Rproj*
 .Rhistory
+/inst/rmarkdown/templates/*/skeleton/skeleton.pdf
+/inst/rmarkdown/templates/*/skeleton/skeleton.tex
