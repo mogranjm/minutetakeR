@@ -4,14 +4,17 @@ params:
     meeting_date: Meeting_date_here
     meeting_time: Meeting_time_here
     chair: Chair_name_here
+    attendees:
+        - Attendee_One
 
 title: '`r params$meeting_name` Agenda'
 # updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
 
 author: |
     | Chair: `r params$chair`
+    | Attendees: `r params$attendees`
 
-date: 'Date: `r params$meeting_date`, `r params$meeting_time`'
+date: 'Meeting to be held: `r params$meeting_date`, `r params$meeting_time`'
 
 geometry: margin=2.54cm
 output: minutetakeR::agenda
