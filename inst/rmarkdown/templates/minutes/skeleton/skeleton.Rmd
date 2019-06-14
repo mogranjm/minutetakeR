@@ -1,0 +1,43 @@
+---
+params:
+    meeting_name: Meeting_Name_Here
+    meeting_date: Meeting_date_here
+    meeting_time: Meeting_time_here
+    chair: Chair_Name_Here
+    attendees:
+    - Attendee_One
+    - Attendee_Two
+    apologies:
+    - Apology_One
+
+title: '`r params$meeting_name` Meeting Minutes'
+# updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
+subtitle: 'tester'
+
+author: |
+    | Chaired by: '`r params$chair`'
+    | Attendees: '`r params$attendees`'
+    | Apologies: '`r params$apologies`'
+
+date: 'Date: `r params$meeting_date`, `r params$meeting_time`'
+
+geometry: margin=2.54cm
+output: minutetakeR::minutes
+---
+
+***
+## Section_One_Header
+* Bullet_Level_1
+    + Bullet_Level_2
+        - Bullet_Level_3
+
+***
+
+## Section_Two_Header
+
+>**Action_Item_Assignee** -> Action_Item
+
+--- *Outcome*: Outcome_Description
+
+***
+

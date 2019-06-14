@@ -4,10 +4,12 @@
 \alias{find_template}
 \title{A Helper function used for locating a LaTeX template file.}
 \usage{
-find_template(template_file)
+find_template(template, file = "template.tex")
 }
 \arguments{
-\item{template_file}{Name of target template file}
+\item{template}{Name of target document template}
+
+\item{file}{Name of the target tex template for this document}
 }
 \description{
 Locates the custom .tex template file in the rmarkdown/templates directory
