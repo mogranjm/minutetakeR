@@ -22,7 +22,9 @@ author: |
 date: 'Date: `r params$meeting_date`, `r params$meeting_time`'
 
 geometry: margin=2.54cm
-output: minutetakeR::minutes
+output: 
+    minutetakeR::minutes:
+        keep_tex: FALSE
 ---
 
 ***
