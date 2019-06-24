@@ -2,7 +2,7 @@
 % Please edit documentation in R/agenda.R
 \name{agenda_doc}
 \alias{agenda_doc}
-\title{Knit R Markdown to Agenda PDF}
+\title{Knit R Markdown to Agenda docx}
 \usage{
 agenda_doc(...)
 }

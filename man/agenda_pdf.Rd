@@ -2,15 +2,12 @@
 % Please edit documentation in R/agenda.R
 \name{agenda_pdf}
 \alias{agenda_pdf}
-\title{Knit R Markdown to Agenda docx}
+\title{Knit R Markdown to Agenda PDF}
 \usage{
-agenda_pdf(..., keep_tex = TRUE, md_extensions = c("+multiline_tables",
-  "+escaped_line_breaks"))
+agenda_pdf(...)
 }
 \arguments{
 \item{...}{Arguments passed to \code{rmarkdown::\link{pdf_document}()}.}
-
-\item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
 
 \item{md_extensions}{Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)}
 }
