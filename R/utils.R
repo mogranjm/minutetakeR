@@ -19,7 +19,7 @@ find_template <- function(template, file){
 #' @param template_name Name of target document template
 #' @param docx_template Name of the target docx template for this document
 #' @param ... Arguments passed to \code{rmarkdown::\link{word_document_format}()}.
-pdf_document_format <- function(...){
+pdf_document_format <- function(template_name, ...){
     template <- find_template(template_name, 'template.tex')
 
     fmt <- rmarkdown::pdf_document(
@@ -39,10 +39,8 @@ pdf_document_format <- function(...){
 #' @param template_name Name of target document template
 #' @param docx_template Name of the target docx template for this document
 #' @param ... Arguments passed to \code{rmarkdown::\link{word_document_format}()}.
-word_document_format <- function(
-    template_name,
-    ...
-){
+word_document_format <- function(template_name, ...){
+
     docx_template = find_template(template_name, 'style-reference.docx')
 
     fmt <- rmarkdown::word_document(
