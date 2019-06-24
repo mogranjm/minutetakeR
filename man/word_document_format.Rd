@@ -10,8 +10,6 @@ word_document_format(template_name, ...)
 \item{template_name}{Name of target document template}
 
 \item{...}{Arguments passed to \code{rmarkdown::\link{word_document_format}()}.}
-
-\item{docx_template}{Name of the target docx template for this document}
 }
 \description{
 Locates the custom .tex template file in the rmarkdown/templates directory

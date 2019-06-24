@@ -4,12 +4,12 @@
 \alias{agenda_pdf}
 \title{Knit R Markdown to Agenda PDF}
 \usage{
-agenda_pdf(...)
+agenda_pdf(keep_tex = TRUE, ...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{rmarkdown::\link{pdf_document}()}.}
+\item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
 
-\item{md_extensions}{Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)}
+\item{...}{Arguments passed to \code{rmarkdown::\link{pdf_document}()}.}
 }
 \description{
 Render Meeting Agenda as a docx using the custom .docx file

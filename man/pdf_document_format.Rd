@@ -4,14 +4,12 @@
 \alias{pdf_document_format}
 \title{A Helper function to create a custom word format, based on word_document.}
 \usage{
-pdf_document_format(...)
+pdf_document_format(template_name, ...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{rmarkdown::\link{word_document_format}()}.}
-
 \item{template_name}{Name of target document template}
 
-\item{docx_template}{Name of the target docx template for this document}
+\item{...}{Arguments passed to \code{rmarkdown::\link{word_document_format}()}.}
 }
 \description{
 Locates the custom .tex template file in the rmarkdown/templates directory

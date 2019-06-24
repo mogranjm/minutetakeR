@@ -1,7 +1,7 @@
 #' Knit R Markdown to Agenda PDF
 #'
 #' Render Meeting Agenda as a docx using the custom .docx file
-#' @param md_extensions Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)
+#' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
 #' @example
@@ -10,7 +10,7 @@
 #' output: minutetakeR::agenda_pdf
 #' ---
 
-agenda_pdf <- function(...){
+agenda_pdf <- function(keep_tex = TRUE, ...){
     pdf_document_format(
         template_name = "agenda_pdf",
         keep_tex = keep_tex,

@@ -4,12 +4,12 @@
 \alias{minutes}
 \title{Knit R Markdown to Minutes PDF}
 \usage{
-minutes(..., keep_tex = TRUE)
+minutes(keep_tex = TRUE, ...)
 }
 \arguments{
-\item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
-
 \item{keep_tex}{Is TRUE by default. Set FALSE to discard intermediate .tex file during knit}
+
+\item{...}{Args passed to \code{rmarkdown::\link{pdf_document}()}.}
 }
 \description{
 Render Meeting Minutes as a PDF using the custom .tex file
