@@ -18,7 +18,7 @@ date: 'Meeting to be held: `r params$meeting_date`, `r params$meeting_time`'
 
 geometry: margin=2.54cm
 output: 
-    minutetakeR::agenda:
+    minutetakeR::agenda_pdf:
         keep_tex: FALSE
 ---
 

@@ -1,0 +1,47 @@
+---
+params:
+    meeting_name: Meeting_Name_Here
+    meeting_date: Meeting_date_here
+    meeting_time: Meeting_time_here
+    chair: Chair_name_here
+    attendees:
+        - Attendee_One
+
+title: '`r params$meeting_name` Agenda'
+# updated: 'Updated `r format(Sys.Date(), "%d %B %Y")`'
+
+author: |
+    | Chair: `r params$chair`
+    | Attendees: `r params$attendees`
+
+date: 'Meeting to be held: `r params$meeting_date`, `r params$meeting_time`'
+
+geometry: margin=2.54cm
+output: 
+    minutetakeR::agenda_doc:
+    # minutetakeR::agenda_pdf: # For permanence
+---
+
+-------------------------------------------------------------------------------------
+ Who         Matters arising from previous minutes
+------------ ------------------------------------------------------------------------
+ Name        **Topic Header** \
+             Topic Details\
+             Enter a backslash before the line break when you want a new line
+             or it will be ignored
+
+ Name 2      **Topic 2**
+-------------------------------------------------------------------------------------
+
+---
+
+-------------------------------------------------------------------------------------
+ Who         Topic
+------------ ------------------------------------------------------------------------
+ Name        **Topic Header** \
+             Details about this topic\
+             - You can add bullet points
+
+ Name        **Topic 2**\
+             You need to leave a blank line between rows
+-------------------------------------------------------------------------------------

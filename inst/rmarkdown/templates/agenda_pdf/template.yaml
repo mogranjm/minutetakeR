@@ -1,0 +1,4 @@
+name: Meeting Agenda PDF
+description: >
+  A PDF template for a meeting agenda
+create_dir: false
