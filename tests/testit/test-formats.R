@@ -26,4 +26,5 @@ test_format <- function(name, os_skip = NULL) {
 }
 
 test_format("minutes")
-test_format("agenda")
+test_format("agenda_pdf")
+test_format("agenda_doc")
