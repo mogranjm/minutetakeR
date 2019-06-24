@@ -18,7 +18,6 @@ find_template <- function(template, file = 'template.tex'){
 #' Locates the custom .tex template file in the rmarkdown/templates directory
 #' @param template_name Name of target document template
 #' @param docx_template Name of the target docx template for this document
-#' @param pandoc_args Arguments passed to Pandoc
 #' @param ... Arguments passed to \code{rmarkdown::\link{word_document_format}()}.
 word_document_format <- function(
     template_name,

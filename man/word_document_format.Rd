@@ -5,7 +5,7 @@
 \title{A Helper function to create a custom word format, based on word_document.}
 \usage{
 word_document_format(template_name,
-  docx_template = find_resource(template_name, "style-reference.docx"),
+  docx_template = find_template(template_name, "style-reference.docx"),
   ...)
 }
 \arguments{
@@ -14,8 +14,6 @@ word_document_format(template_name,
 \item{docx_template}{Name of the target docx template for this document}
 
 \item{...}{Arguments passed to \code{rmarkdown::\link{word_document_format}()}.}
-
-\item{pandoc_args}{Arguments passed to Pandoc}
 }
 \description{
 Locates the custom .tex template file in the rmarkdown/templates directory
