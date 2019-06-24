@@ -22,7 +22,7 @@ find_template <- function(template, file = 'template.tex'){
 #' @param ... Arguments passed to \code{rmarkdown::\link{word_document_format}()}.
 word_document_format <- function(
     template_name,
-    docx_template = find_resource(template_name, 'style-reference.docx'),
+    docx_template = find_template(template_name, 'style-reference.docx'),
     ...
 ){
     fmt <- rmarkdown::word_document(
