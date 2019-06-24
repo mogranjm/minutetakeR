@@ -1,4 +1,4 @@
-#' Knit R Markdown to Agenda docx
+#' Knit R Markdown to Agenda PDF
 #'
 #' Render Meeting Agenda as a docx using the custom .docx file
 #' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
@@ -11,18 +11,16 @@
 #' output: minutetakeR::agenda_pdf
 #' ---
 
-agenda_pdf <- function(..., keep_tex = TRUE,
-                   md_extensions = c("+multiline_tables", "+escaped_line_breaks")){
-
-    template <- find_template("agenda")
-
-    rmarkdown::pdf_document(
-        template = template,
+agenda_pdf <- function(...){
+    pdf_document_format(
+        template_name = "agenda_pdf",
         keep_tex = keep_tex,
-        md_extensions = md_extensions
+        md_extensions = md_extensions,
+        ...
     )
 }
-#' Knit R Markdown to Agenda PDF
+
+#' Knit R Markdown to Agenda docx
 #'
 #' Render Meeting Agenda as a PDF using the custom .tex file
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
@@ -34,5 +32,8 @@ agenda_pdf <- function(..., keep_tex = TRUE,
 #' ---
 
 agenda_doc <- function(...){
-    word_document_format(template_name = "agenda", ...)
+    word_document_format(
+        template_name = "agenda_doc",
+        ...
+    )
 }
