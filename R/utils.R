@@ -11,3 +11,22 @@ find_template <- function(template, file = 'template.tex'){
         stop("Couldn't locate template file ", template_file, call. = FALSE)
     }
 }
+
+
+#' Helper function to create a custom word format, based on word_document
+#' Including custom latex and docx style template
+#' @param template_name Name of target document template
+
+word_document_format <- function(
+    template_name,
+    docx_template = find_resource(template_name, 'style-reference.docx'),
+    ...
+){
+    fmt <- rmarkdown::word_document(
+        ...,
+        reference_docx = docx_template,
+        pandoc_args = pandoc_args
+    )
+    fmt$inherits <- "word_document"
+    fmt
+}
