@@ -14,7 +14,6 @@ agenda_pdf <- function(keep_tex = TRUE, ...){
     pdf_document_format(
         template_name = "agenda_pdf",
         keep_tex = keep_tex,
-        md_extensions = md_extensions,
         ...
     )
 }
@@ -32,8 +31,5 @@ agenda_pdf <- function(keep_tex = TRUE, ...){
 #' ---
 
 agenda_doc <- function(...){
-    word_document_format(
-        template_name = "agenda_doc",
-        ...
-    )
+    word_document_format(template_name = "agenda_doc", ...)
 }

@@ -19,12 +19,13 @@ find_template <- function(template, file){
 #' @param template_name Name of target document template
 #' @param ... Arguments passed to \code{rmarkdown::\link{word_document_format}()}.
 pdf_document_format <- function(template_name, ...){
+
     template <- find_template(template_name, 'template.tex')
 
     fmt <- rmarkdown::pdf_document(
         template = template,
-        keep_tex = keep_tex,
-        md_extensions = c("+multiline_tables", "+escaped_line_breaks")
+        md_extensions = c("+multiline_tables", "+escaped_line_breaks"),
+        ...
     )
 
     fmt$inherits <- "pdf_document"

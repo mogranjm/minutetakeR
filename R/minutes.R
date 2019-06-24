@@ -11,8 +11,5 @@
 #' ---
 
 minutes <- function(keep_tex = TRUE, ...){
-    pdf_document_format(
-        template_name = "minutes",
-        keep_tex = keep_tex
-        )
+    pdf_document_format(template_name = "minutes", ...)
 }
