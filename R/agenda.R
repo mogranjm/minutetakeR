@@ -8,10 +8,10 @@
 #' @example
 #' ---
 #' # In a YAML Block
-#' output: minutetakeR::agenda
+#' output: minutetakeR::agenda_pdf
 #' ---
 
-agenda_final <- function(..., keep_tex = TRUE,
+agenda_pdf <- function(..., keep_tex = TRUE,
                    md_extensions = c("+multiline_tables", "+escaped_line_breaks")){
 
     template <- find_template("agenda")
@@ -25,16 +25,14 @@ agenda_final <- function(..., keep_tex = TRUE,
 #' Knit R Markdown to Agenda PDF
 #'
 #' Render Meeting Agenda as a PDF using the custom .tex file
-#' @param keep_tex Is TRUE by default. Set FALSE to discard intermediate .tex file during knit
-#' @param md_extensions Markdown extensions passed to Pandoc ("+" precursor indicates include, "-" precursor indicates exclude)
 #' @param ... Arguments passed to \code{rmarkdown::\link{pdf_document}()}.
 #' @export
 #' @example
 #' ---
 #' # In a YAML Block
-#' output: minutetakeR::agenda
+#' output: minutetakeR::agenda_doc
 #' ---
 
-agenda_draft <- function(...){
+agenda_doc <- function(...){
     word_document_format(template_name = "agenda", ...)
 }
