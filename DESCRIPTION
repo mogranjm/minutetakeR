@@ -1,7 +1,7 @@
 Package: minutetakeR
 Type: Package
 Title: Meeting document management with R markdown
-Version: 0.6
+Version: 0.7
 Authors@R: person(given = "James", family = "Morgan", role = c("aut", "cre"), email = "ja.morgan1@outlook.com")
 Description: An R Markdown template for managing documents relating to meetings (minutes & agendas).
 License: GPL(>=2.0)
@@ -10,4 +10,4 @@ URL: https://github.com/mogranjm/minutetakeR
 BugReports: https://github.com/mogranjm/minutetakeR/issues
 Suggests: testit
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
