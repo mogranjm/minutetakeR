@@ -15,8 +15,8 @@ title: '`r params$meeting_name` Meeting Minutes'
 subtitle: 'tester'
 
 author: |
-    | Attendees: '`r params$attendees`'
-    | Apologies: '`r params$apologies`'
+    | Attendees: `r params$attendees`
+    | Apologies: `r params$apologies`
 
 date: |
     | Meeting Date: `r params$meeting_time`, `r params$meeting_date`
