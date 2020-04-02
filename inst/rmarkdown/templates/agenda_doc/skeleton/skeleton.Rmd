@@ -14,7 +14,7 @@ author: |
     | Chair: `r params$chair`
     | Attendees: `r params$attendees`
 
-date: 'Meeting to be held: `r params$meeting_date`, `r params$meeting_time`'
+date: 'Meeting to be held: `r params$meeting_time`, `r params$meeting_date`'
 
 geometry: margin=2.54cm
 output: 
@@ -22,12 +22,14 @@ output:
     # minutetakeR::agenda_pdf: # For permanence
 ---
 
+## Previous Minutes
+
 -------------------------------------------------------------------------------------
- Who         Matters arising from previous minutes
+ Assignee    Matters arising from previous minutes
 ------------ ------------------------------------------------------------------------
  Name        **Topic Header** \
-             Topic Details\
-             Enter a backslash before the line break when you want a new line
+             - Topic Details \
+             - Enter a backslash before the line break when you want a new line
              or it will be ignored
 
  Name 2      **Topic 2**
@@ -35,12 +37,14 @@ output:
 
 ---
 
+## New Matters
+
 -------------------------------------------------------------------------------------
- Who         Topic
+ Who         New Matter to be discussed
 ------------ ------------------------------------------------------------------------
  Name        **Topic Header** \
-             Details about this topic\
-             - You can add bullet points
+             - Details about this topic\
+             - You can add bullets
 
  Name        **Topic 2**\
              You need to leave a blank line between rows
