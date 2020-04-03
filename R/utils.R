@@ -7,9 +7,11 @@
 find_template <- function(template, file){
     template_file <- system.file("rmarkdown", "templates", template, "resources", file,
                             package = "minutetakeR")
-    if(template_file == ""){
-        stop("Couldn't locate template file ", template_file, call. = FALSE)
-    }
+    ifelse(
+        template_file == "",
+        stop("Couldn't locate template file ", template_file, call. = FALSE),
+        return(template_file)
+    )
 }
 
 # Including custom latex and docx style template
