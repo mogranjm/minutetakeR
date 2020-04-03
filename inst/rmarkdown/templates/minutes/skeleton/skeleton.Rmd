@@ -12,7 +12,6 @@ params:
 
 title: '`r params$meeting_name` Meeting Minutes'
 # updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
-subtitle: 'tester'
 
 author: |
     | Chaired by: '`r params$chair`'
