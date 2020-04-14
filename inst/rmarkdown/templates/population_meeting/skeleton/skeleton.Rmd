@@ -1,0 +1,63 @@
+---
+params:
+    meeting_name: Population Genetic Testing Project
+    meeting_date: Meeting_date_here
+    meeting_time: 09:00
+    attendees:
+    - James Morgan
+    - Alison Trainer
+    apologies:
+    - Apology_One
+
+title: '`r params$meeting_name` Meeting Minutes'
+# updated: 'Minutes Updated `r format(Sys.Date(), "%d %B %Y")`'
+
+author: |
+    | Attendees: `r params$attendees`
+    | Apologies: `r params$apologies`
+
+date: |
+    | Meeting Date: `r params$meeting_time`, `r params$meeting_date`
+    | Minutes Compiled: `r format(Sys.time(), '%H:%M %m %h %Y')`
+
+geometry: margin=2.54cm
+output: 
+    minutetakeR::minutes:
+        keep_tex: FALSE
+---
+
+## Last Time
+
+-------------------------------------------------------------------------------------
+ Who         Matters arising from previous minutes
+------------ ------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+
+***
+
+## This Time
+
+----------------------------------------------------------------------------------------------------------
+Matters discussed              Summary & Actions
+--------------------------     ---------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+
+***
+
+## Next Time
+
+----------------------------------------------------------------------------------------------------------
+Assignee                       Actions
+--------------------------     ---------------------------------------------------------------------------
+James                           
+                                
+Alison
+
+----------------------------------------------------------------------------------------------------------
+
+***
+
+
