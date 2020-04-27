@@ -1,2 +1,4 @@
 ^minutR\.Rproj$
 ^\.Rproj\.user$
+^packrat/
+^\.Rprofile$
